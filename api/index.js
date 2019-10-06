@@ -2,11 +2,11 @@ import Prismic from 'prismic-javascript'
 
 const endPoint = process.env.PRISMIC
 
-const getPageAPI = async slug => {
+const getPageAPI = async uid => {
   try {
     const API = await Prismic.api(endPoint)
     const res = await API.query(
-      Prismic.Predicates.at('my.page.uid', slug)
+      Prismic.Predicates.at('my.page.uid', uid)
     )
     return res.results[0];
   } catch (error) {

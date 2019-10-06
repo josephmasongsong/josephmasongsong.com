@@ -3,7 +3,6 @@ import { getPageAPI } from '../api'
 import PageLayout from '../components/PageLayout'
 import Slices from '../components/slices'
 import HeadContent from '../components/HeadContent'
-import Navbar from '../components/Navbar'
 import { RichText } from 'prismic-reactjs'
 
 const Hero = ({ title, subtitle }) =>
@@ -30,7 +29,6 @@ const Page = ({ doc }) =>
   <Fragment>
     {doc && <HeadContent doc={doc.data} />}
     <PageLayout>
-      <Navbar />
       <Hero title={doc.data.title[0].text} subtitle={doc.data.subtitle} />
       {doc && renderSlices(doc.data.body1)}
     </PageLayout>
@@ -38,8 +36,8 @@ const Page = ({ doc }) =>
 
 
 Page.getInitialProps = async (context) => {
-  const { slug } = context.query
-  const doc = await getPageAPI(slug)
+  const { uid } = context.query
+  const doc = await getPageAPI(uid)
   return { doc }
 }
 
