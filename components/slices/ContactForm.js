@@ -2,7 +2,7 @@ import { ValidationError, useForm } from '@statickit/react';
 
 const ContactForm = () => {
   const [state, submit] = useForm({
-    id: '97681df364bf'
+    id: process.env.STATICKIT
   });
 
   if (state.succeeded) {

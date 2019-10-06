@@ -1,9 +1,10 @@
 import Prismic from 'prismic-javascript'
-import { apiEndpoint } from '../prismic-config.json'
+
+const endPoint = process.env.PRISMIC
 
 const getPageAPI = async slug => {
   try {
-    const API = await Prismic.api(apiEndpoint)
+    const API = await Prismic.api(endPoint)
     const res = await API.query(
       Prismic.Predicates.at('my.page.uid', slug)
     )
@@ -16,7 +17,7 @@ const getPageAPI = async slug => {
 
 const getNavbarAPI = async() => {
   try {
-    const API = await Prismic.api(apiEndpoint)
+    const API = await Prismic.api(endPoint)
     const res = await API.query(
       Prismic.Predicates.at('document.type', 'navigation')
     )
@@ -29,7 +30,7 @@ const getNavbarAPI = async() => {
 
 const getHomepageAPI = async() => {
   try {
-    const API = await Prismic.api(apiEndpoint)
+    const API = await Prismic.api(endPoint)
     const res = await API.query(
       Prismic.Predicates.at('document.type', 'homepage')
     )

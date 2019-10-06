@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const dev = process.env.NODE_ENV !== 'production';
 const next = require('next');
