@@ -1,0 +1,54 @@
+@tailwind base;
+
+.topnav {
+  @apply absolute top-0 left-0 w-full text-white py-4;
+}
+
+.btn-callout {
+  @apply font-header py-3 px-6 border-2 border-white;
+}
+
+.topnav-fixed {
+  @apply fixed top-0 left-0 right-0 bg-white text-black shadow-md py-4;
+}
+
+.topnav-fixed .btn-callout {
+  @apply font-header py-3 px-6 bg-blue-skies-500 text-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-header leading-snug;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply antialiased font-body;
+}
+
+@screen md {
+  h2 {
+    @apply text-3xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  p {
+    @apply text-lg;
+  }
+  .topnav {
+    @apply py-6;
+  }
+  .topnav .btn-callout, .topnav-fixed .btn-callout {
+    @apply ml-10;
+  }
+}
