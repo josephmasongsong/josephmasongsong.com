@@ -13,6 +13,14 @@ app
   .then(() => {
     const server = express();
 
+    server.get('/:uid', (req, res) => {
+      const nextJSPage = '/page';
+      const queryParams = { uid: req.params.uid };
+      app.render(req, res, nextJSPage, queryParams);
+    })
+
+    server.get('*', (req, res) => handle(req, res));
+
     server.get('/preview', (req, res) => {
       const token = req.query.token
 
@@ -22,14 +30,6 @@ app
           res.redirect(302, url)
         })
     })
-
-    server.get('/:uid', (req, res) => {
-      const nextJSPage = '/page';
-      const queryParams = { uid: req.params.uid };
-      app.render(req, res, nextJSPage, queryParams);
-    })
-
-    server.get('*', (req, res) => handle(req, res));
 
     server.listen(8080, err => {
       if (err) throw err;

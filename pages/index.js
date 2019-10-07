@@ -1,8 +1,8 @@
 import { Fragment } from 'react'
+import { getHomepageAPI, getNavbarAPI } from '../api'
 import HomeLayout from '../components/HomeLayout'
 import Slices from '../components/slices'
 import HeadContent from '../components/HeadContent'
-import { getHomepageAPI } from '../api'
 
 const renderSlices = arr => {
   if (arr.length === 0) {
@@ -14,7 +14,7 @@ const renderSlices = arr => {
 
 const Index = ({ doc }) =>
   <Fragment>
-    {doc && <HeadContent doc={doc.data} />}
+    <HeadContent doc={doc.data} />
     <HomeLayout>
       {doc && renderSlices(doc.data.body)}
     </HomeLayout>

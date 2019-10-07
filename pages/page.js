@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { getPageAPI } from '../api'
+import { getPageAPI, getNavbarAPI } from '../api'
 import PageLayout from '../components/PageLayout'
 import Slices from '../components/slices'
 import HeadContent from '../components/HeadContent'
@@ -27,8 +27,8 @@ const renderSlices = arr => {
 
 const Page = ({ doc }) =>
   <Fragment>
-    {doc && <HeadContent doc={doc.data} />}
-    <PageLayout>
+    <HeadContent doc={doc.data} />
+    <PageLayout >
       <Hero title={doc.data.title[0].text} subtitle={doc.data.subtitle} />
       {doc && renderSlices(doc.data.body1)}
     </PageLayout>

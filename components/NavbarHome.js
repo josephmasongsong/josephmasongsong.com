@@ -5,6 +5,7 @@ import { RichText } from 'prismic-reactjs'
 import { Link as ScrollLink, animateScroll } from 'react-scroll'
 import Link from 'next/link'
 import Burger from '../node_modules/react-css-burger/dist/'
+import Prismic from 'prismic-javascript'
 
 const NavbarHome = () => {
 
@@ -12,20 +13,26 @@ const NavbarHome = () => {
   const [ scroll, setScroll ] = useState(1)
   const [ isOpen, setIsOpen ] = useState(false)
 
-  const fetchData = async () => {
-    const doc = await getNavbarAPI()
-    setNav(doc)
-  }
+  const endPoint = process.env.PRISMIC
+  const Client = Prismic.client(`https://josephmasongsong.cdn.prismic.io/api/v2`)
 
   useEffect(
     () => {
+      const fetchData = async () => {
+        const res = await Client.query(
+          Prismic.Predicates.at('document.type', 'navigation')
+        )
+        if (res) {
+          setNav(res.results[0])
+        }
+      }
       fetchData()
     },[]
   )
 
   useEffect(
     () => {
-      document.addEventListener("scroll", () => {
+      window.addEventListener("scroll", () => {
         const scrollCheck = window.scrollY < 1
         if (scrollCheck !== scroll) {
           setScroll(scrollCheck)

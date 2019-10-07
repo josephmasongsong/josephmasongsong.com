@@ -1,13 +1,13 @@
 {
   "version": 2,
   "builds": [
-    { "src": "server.js", "use": "@now/node-server" },
-    { "src": "next.config.js", "use": "@now/next" }
+    { "src": "next.config.js", "use": "@now/next" },
+    { "src": "server.js", "use": "@now/node-server" }
   ],
   "routes": [
-    { "src": "/preview", "dest": "/preview" },
     { "src": "/(?<uid>[^/]+)$", "dest": "/page?uid=$uid" },
-    { "src": "/robots.txt", "dest": "/robots.txt" }
+    { "src": "/preview", "dest": "/preview" },
+    { "src": "/robots.txt", "dest": "/static/robots.txt" }
   ],
   "env": {
     "STATICKIT": "@statickit",
