@@ -1,13 +1,19 @@
 import { ValidationError, useForm } from '@statickit/react';
+import Link from 'next/link'
 
 const ContactForm = () => {
   const [state, submit] = useForm({
-    id: process.env.STATICKIT
+    id: '97681df364bf'
   });
 
   if (state.succeeded) {
     return (
-      <div>Thank you for signing up!</div>
+      <div className="container mx-auto py-16 md:py-24 px-6 md:px-0">
+        <h2 className="text-2xl mb-6">Thanks for reaching out, we will speak soon!</h2>
+        <p>
+          Your request for contact has been received. Not much else to see here. Might as well <Link href="/"><a className="text-blue-500 underline">make your back home.</a></Link>
+        </p>
+      </div>
     )
   }
 

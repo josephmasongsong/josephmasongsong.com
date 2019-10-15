@@ -58,6 +58,10 @@ span[class^="burger_hamburger-inner__"],span[class^="burger_hamburger-inner__"]:
   background: #fff !important;
 }
 
+.topnav-fixed span[class^="burger_hamburger-inner__"], .topnav-fixed span[class^="burger_hamburger-inner__"]:before, .topnav-fixed span[class^="burger_hamburger-inner__"]:after {
+  background: #2b90d9 !important;
+}
+
 #about_me p {
   margin-bottom: 1rem;
 }

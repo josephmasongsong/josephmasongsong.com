@@ -23,9 +23,9 @@ const Navbar = () => {
         const res = await Client.query(
           Prismic.Predicates.at('document.type', 'navigation')
         )
-        if (res) {
+
           setNav(res.results[0])
-        }
+
       }
       fetchData()
     },[]
@@ -33,7 +33,7 @@ const Navbar = () => {
 
   useEffect(
     () => {
-      window.addEventListener("scroll", () => {
+      document.addEventListener("scroll", () => {
         const scrollCheck = window.scrollY < 1
         if (scrollCheck !== scroll) {
           setScroll(scrollCheck)
@@ -54,11 +54,12 @@ const Navbar = () => {
     setIsOpen(false)
 	}
 
-  const scrollClass = scroll ? 'topnav' : 'topnav-fixed'
+  const scrollClass = scroll ? 'topnav' : 'topnav-fixed bg-white'
   const showHideClass = isOpen ? '' : 'hidden'
+  const showHideFixedClass = isOpen ? 'topnav-fixed bg-white' : ''
 
   return(
-    <header className={`${scrollClass} z-20 px-4 md:px-0`}>
+    <header className={`${scrollClass} ${showHideFixedClass} z-20 px-4 md:px-0`}>
       {nav && nav.data &&
         <nav className="container mx-auto flex items-center justify-between flex-wrap">
           <div className=" flex justify-between items-center flex-shrink-0">

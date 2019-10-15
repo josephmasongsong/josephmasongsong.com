@@ -9,7 +9,7 @@
 }
 
 .topnav-fixed {
-  @apply fixed top-0 left-0 right-0 bg-white text-black shadow-md py-4;
+  @apply fixed top-0 left-0 right-0 text-black shadow-md py-4;
 }
 
 .topnav-fixed .btn-callout {
