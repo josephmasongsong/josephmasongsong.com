@@ -36,6 +36,7 @@ app
       console.log('> Ready http://localhost:8080 <');
     });
 
+     server.use('/', express.static('public'));
   })
   .catch(ex => {
     console.error(ex.stack);
