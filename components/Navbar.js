@@ -59,12 +59,12 @@ const Navbar = () => {
   const showHideFixedClass = isOpen ? 'topnav-fixed bg-white' : ''
 
   return(
-    <header className={`${scrollClass} ${showHideFixedClass} z-20 px-4 md:px-0`}>
+    <header className={`${scrollClass} ${showHideFixedClass} z-20 px-4 xl:px-0`}>
       {nav && nav.data &&
         <nav className="container mx-auto flex items-center justify-between flex-wrap">
           <div className=" flex justify-between items-center flex-shrink-0">
             <a href="/" className="flex items-center">
-              <img src={nav.data.logo.url} className="rounded-full w-10 h-10 md:w-12 md:h-12 mr-3" alt="Joseph Masongsong - Vancouver, BC based web developer and consultant" />
+              <img src={nav.data.logo.url} className="rounded-full xs:w-8 xs:h-8  w-10 h-10 md:w-12 md:h-12 mr-3" alt="Joseph Masongsong - Vancouver, BC based web developer and consultant" />
               <span className="font-header text-xl md:text-2xl leading-none">{RichText.asText(nav.data.title)}</span>
             </a>
           </div>
@@ -77,6 +77,7 @@ const Navbar = () => {
               hoverOpacity={0.8}
               scale={1}
               marginTop='0.625rem'
+              maringLeft='0rem'
             />
           </div>
           <div className={`w-full md:flex md:items-center md:w-auto ${showHideClass}`} id="navlinks-container">

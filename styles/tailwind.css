@@ -37,18 +37,30 @@ body {
 
 @screen md {
   h2 {
-    @apply text-3xl;
+    @apply text-2xl;
   }
   h4 {
     @apply text-xl;
   }
   p {
-    @apply text-lg;
+    @apply text-base;
   }
   .topnav {
     @apply py-6;
   }
   .topnav .btn-callout, .topnav-fixed .btn-callout {
+    @apply ml-0;
+  }
+}
+
+@screen lg {
+  h2 {
+    @apply text-3xl;
+  }
+  .topnav .btn-callout, .topnav-fixed .btn-callout {
     @apply ml-10;
+  }
+  p {
+    @apply text-lg;
   }
 }

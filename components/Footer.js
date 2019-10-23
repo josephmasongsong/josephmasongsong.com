@@ -1,6 +1,6 @@
 
 const Footer = () =>
-  <footer className="bg-blue-skies-900 text-white py-8">
+  <footer className="bg-blue-skies-900 text-white py-8 px-4 xl:px-0">
     <div className="container mx-auto text-center md:items-center md:justify-between md:flex">
       <div className="copyright flex items-center justify-center">© 2019 Joseph Masongsong. All rights reserved.</div>
       <div className="contact flex items-center justify-center">

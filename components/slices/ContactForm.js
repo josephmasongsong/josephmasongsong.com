@@ -18,7 +18,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="container mx-auto py-16 md:py-24 px-6 md:px-0">
+    <div className="container mx-auto py-16 md:py-24 px-6 xl:px-0">
       <form onSubmit={submit}>
         <label htmlFor="name" className="block w-full mb-4">
           <span className="text-gray-700 mb-1 block">Name</span>
@@ -44,7 +44,7 @@ const ContactForm = () => {
         </label>
         <ValidationError field="message" prefix="Message" errors={state.errors} />
 
-        <button type="submit" className="bg-blue-skies-500 text-white py-3 px-6 font-header hover:bg-blue-skies-600">Send Message</button>
+        <button type="submit" className="w-full md:w-auto bg-blue-skies-500 text-white py-3 px-6 font-header hover:bg-blue-skies-600">Send Message</button>
       </form>
     </div>
   )

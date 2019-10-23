@@ -6,10 +6,10 @@ import HeadContent from '../components/HeadContent'
 import { RichText } from 'prismic-reactjs'
 
 const Hero = ({ title, subtitle }) =>
-  <div className="bg-hex h-1/2 md:h-350 w-full flex items-center relative px-4 md:px-0 text-white">
+  <div className="bg-hex h-1/2 md:h-350 w-full flex items-center relative px-4 xl:px-0 text-white">
     <div className="container mx-auto">
       <div className="w-full">
-        <h1 className="text-3xl md:text-5xl">
+        <h1 className="xs:text-xl text-2xl md:text-4xl lg:text-5xl">
           {title}
         </h1>
         {subtitle && <div>{RichText.render(subtitle)}</div>}

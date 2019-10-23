@@ -1,3 +1,13 @@
+/* * { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); } */
+
 @font-face {
     font-family: 'FreightTextW01';
     src: url('/static/fonts/FreightTextW01-Black.woff2') format('woff2'),
@@ -54,6 +64,10 @@ span[class^="burger_hamburger-inner__"],span[class^="burger_hamburger-inner__"]:
   border-radius: 0;
 }
 
+button[class^="burger_hamburger__"] {
+  margin-left: 0 !important;
+}
+
 .topnav span[class^="burger_hamburger-inner__"], .topnav span[class^="burger_hamburger-inner__"]:before, .topnav span[class^="burger_hamburger-inner__"]:after {
   background: #fff !important;
 }
@@ -67,4 +81,11 @@ span[class^="burger_hamburger-inner__"],span[class^="burger_hamburger-inner__"]:
 }
 #about_me p:last-child {
   margin-bottom: 0;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.05);
 }
