@@ -6,8 +6,7 @@
   ],
   "routes": [
     { "src": "/(?<uid>[^/]+)$", "dest": "/page?uid=$uid" },
-    { "src": "/preview", "dest": "/preview" },
-    { "src": "/robots.txt", "dest": "/static/robots.txt" }
+    { "src": "/preview", "dest": "/preview" }
   ],
   "env": {
     "STATICKIT": "@statickit",

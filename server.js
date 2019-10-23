@@ -36,16 +36,6 @@ app
       console.log('> Ready http://localhost:8080 <');
     });
 
-    const options = {
-      root: __dirname + '/static/',
-      headers: {
-        'Content-Type': 'text/plain;charset=UTF-8',
-      }
-    };
-
-    server.get('/robots.txt', (req, res) => (
-      res.status(200).sendFile('robots.txt', options)
-    ));
   })
   .catch(ex => {
     console.error(ex.stack);
