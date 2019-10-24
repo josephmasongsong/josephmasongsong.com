@@ -204,10 +204,11 @@
 .icon-social-stumbleupon,
 .icon-social-youtube,
 /* purgecss start ignore */
-.icon-social-dropbox,
+.icon-social-dropbox
 /* purgecss end ignore */
 .icon-social-vkontakte,
-.icon-social-steam {
+.icon-social-steam /* purgecss start ignore */ {
+
   font-family: 'simple-line-icons';
   speak: none;
   font-style: normal;
@@ -219,6 +220,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* purgecss end ignore */
+
 .icon-user:before {
   content: "\e005";
 }
