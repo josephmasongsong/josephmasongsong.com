@@ -60,6 +60,11 @@ button[class^="burger_hamburger__"] {
 #about_me p:last-child {
   @apply mb-0;
 }
+
+h4 span i[class*="icon-"] {
+  @apply text-blue-skies-500;
+}
+
 /* purgecss end ignore */
 
 
