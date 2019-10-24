@@ -1,5 +1,23 @@
 @tailwind base;
 
+body {
+  @apply antialiased font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-header leading-snug;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+@tailwind components;
+
 .topnav {
   @apply absolute top-0 left-0 w-full text-white py-4;
 }
@@ -16,24 +34,30 @@
   @apply font-header py-3 px-6 bg-blue-skies-600 text-white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply font-header leading-snug;
+span[class^="burger_hamburger-inner__"],span[class^="burger_hamburger-inner__"]:before, span[class^="burger_hamburger-inner__"]:after {
+  @apply rounded-none;
 }
 
-h2 {
-  @apply text-2xl;
+button[class^="burger_hamburger__"] {
+  @apply ml-0;
 }
 
-h4 {
-  @apply text-lg;
+.topnav span[class^="burger_hamburger-inner__"], .topnav span[class^="burger_hamburger-inner__"]:before, .topnav span[class^="burger_hamburger-inner__"]:after {
+  @apply bg-white;
 }
 
-@tailwind components;
+.topnav-fixed span[class^="burger_hamburger-inner__"], .topnav-fixed span[class^="burger_hamburger-inner__"]:before, .topnav-fixed span[class^="burger_hamburger-inner__"]:after {
+  @apply bg-blue-skies-500;
+}
+
+#about_me p {
+  @apply mb-4;
+}
+#about_me p:last-child {
+  @apply mb-0;
+}
+
 @tailwind utilities;
-
-body {
-  @apply antialiased font-body;
-}
 
 @screen md {
   h2 {

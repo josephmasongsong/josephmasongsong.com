@@ -1,13 +1,3 @@
-/* * { background-color: rgba(255,0,0,.2); }
-* * { background-color: rgba(0,255,0,.2); }
-* * * { background-color: rgba(0,0,255,.2); }
-* * * * { background-color: rgba(255,0,255,.2); }
-* * * * * { background-color: rgba(0,255,255,.2); }
-* * * * * * { background-color: rgba(255,255,0,.2); }
-* * * * * * * { background-color: rgba(255,0,0,.2); }
-* * * * * * * * { background-color: rgba(0,255,0,.2); }
-* * * * * * * * * { background-color: rgba(0,0,255,.2); } */
-
 @font-face {
     font-family: 'FreightTextW01';
     src: url('/static/fonts/FreightTextW01-Black.woff2') format('woff2'),
@@ -58,29 +48,6 @@
   100% {
     opacity: 0;
   }
-}
-
-span[class^="burger_hamburger-inner__"],span[class^="burger_hamburger-inner__"]:before, span[class^="burger_hamburger-inner__"]:after {
-  border-radius: 0;
-}
-
-button[class^="burger_hamburger__"] {
-  margin-left: 0 !important;
-}
-
-.topnav span[class^="burger_hamburger-inner__"], .topnav span[class^="burger_hamburger-inner__"]:before, .topnav span[class^="burger_hamburger-inner__"]:after {
-  background: #fff !important;
-}
-
-.topnav-fixed span[class^="burger_hamburger-inner__"], .topnav-fixed span[class^="burger_hamburger-inner__"]:before, .topnav-fixed span[class^="burger_hamburger-inner__"]:after {
-  background: #2b90d9 !important;
-}
-
-#about_me p {
-  margin-bottom: 1rem;
-}
-#about_me p:last-child {
-  margin-bottom: 0;
 }
 
 .grow {
