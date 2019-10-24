@@ -10,7 +10,7 @@
  Instead of a list of all class selectors, you can use the generic [class*="icon-"] selector, but it's slower:
 */
 /* purgecss start ignore */
-i[class*"icon-"] {
+i[class*="icon-"] {
   font-family: 'simple-line-icons';
     speak: none;
     font-style: normal;
