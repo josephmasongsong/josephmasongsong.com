@@ -1,5 +1,6 @@
 @tailwind base;
 
+/* purgecss start ignore */
 body {
   @apply antialiased font-body;
 }
@@ -15,9 +16,11 @@ h2 {
 h4 {
   @apply text-lg;
 }
+/* purgecss end ignore */
 
 @tailwind components;
 
+/* purgecss start ignore */
 .topnav {
   @apply absolute top-0 left-0 w-full text-white py-4;
 }
@@ -56,9 +59,11 @@ button[class^="burger_hamburger__"] {
 #about_me p:last-child {
   @apply mb-0;
 }
+/* purgecss end ignore */
+
 
 @tailwind utilities;
-
+/* purgecss start ignore */
 @screen md {
   h2 {
     @apply text-2xl;
@@ -88,3 +93,4 @@ button[class^="burger_hamburger__"] {
     @apply text-lg;
   }
 }
+/* purgecss end ignore */
