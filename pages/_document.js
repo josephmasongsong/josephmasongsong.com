@@ -1,6 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Router from "next/router";
-import withGA from "next-ga";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -21,4 +19,4 @@ class MyDocument extends Document {
   }
 }
 
-export default withGA("UA-150837765-1", Router)(MyDocument)
+export default MyDocument
