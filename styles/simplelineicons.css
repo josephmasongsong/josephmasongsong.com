@@ -5,6 +5,24 @@
   font-weight: normal;
   font-style: normal;
 }
+/*
+ Use the following CSS code if you want to have a class per icon.
+ Instead of a list of all class selectors, you can use the generic [class*="icon-"] selector, but it's slower:
+*/
+/* purgecss start ignore */
+i[class*"icon-"] {
+  font-family: 'simple-line-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* purgecss end ignore */
 
 .icon-user,
 .icon-people,
@@ -94,8 +112,10 @@
 .icon-drawer,
 .icon-docs,
 .icon-doc,
+/* purgecss start ignore */
 .icon-diamond,
 .icon-cup,
+/* purgecss end ignore */
 .icon-calculator,
 .icon-bubbles,
 .icon-briefcase,
@@ -205,6 +225,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 .icon-user:before {
   content: "\e005";
