@@ -5,8 +5,9 @@
     { "src": "server.js", "use": "@now/node-server" }
   ],
   "routes": [
-    { "src": "/(?<uid>[^/]+)$", "dest": "/page?uid=$uid" },
-    { "src": "/preview", "dest": "/preview" }
+    { "src": "/robots.txt", "dest": "/static/robots.txt" },
+    { "src": "/preview", "dest": "/preview" },
+    { "src": "/(?<uid>[^/]+)$", "dest": "/page?uid=$uid" }
   ],
   "env": {
     "STATICKIT": "@statickit",

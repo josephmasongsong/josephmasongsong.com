@@ -3,7 +3,7 @@ import { RichText } from 'prismic-reactjs'
 
 const HeadContent = ({ doc }) =>
   <Head>
-    <title>{RichText.asText(doc.title)} - Joseph Masongsong</title>
+    <title>{RichText.asText(doc.title)} - josephmasongsong.com</title>
     <meta
       name="viewport"
       content="initial-scale=1.0, width=device-width"

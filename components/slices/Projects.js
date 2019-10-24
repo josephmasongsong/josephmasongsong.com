@@ -10,7 +10,7 @@ const Projects = ({ slice }) =>
               <div className="flex flex-wrap items-center xl:-mx-6">
                 <div className="order-last md:order-first md:w-1/2 xl:w-6/12 px-6 xl:mr-auto">
                   <h2 className="font-freight leading-snug mb-6 mt-2 md:mt-0">{RichText.asText(item.project_title)}</h2>
-                  <p>{RichText.asText(item.project_description)}</p>
+                  <div className="project-description">{RichText.render(item.project_description)}</div>
                 </div>
                 <div className="md:w-1/2 xl:w-5/12 px-6">
                   <a href={Link.url(item.project_link)} className="cursor-pointer block grow"><img src={item.project_image.url} className="object-cover object-top w-full h-400 shadow-md" alt={item.project_image.alt} /></a>
@@ -29,7 +29,7 @@ const Projects = ({ slice }) =>
                 </div>
                 <div className="md:w-1/2 xl:w-6/12 xl:ml-auto px-6">
                   <h2 className="font-freight leading-snug mb-6 mt-2 md:mt-0">{RichText.asText(item.project_title)}</h2>
-                  <p>{RichText.asText(item.project_description)}</p>
+                  <div className="project-description">{RichText.render(item.project_description)}</div>
                 </div>
               </div>
             </div>

@@ -23,9 +23,7 @@ const Navbar = () => {
         const res = await Client.query(
           Prismic.Predicates.at('document.type', 'navigation')
         )
-
-          setNav(res.results[0])
-
+        setNav(res.results[0])
       }
       fetchData()
     },[]
@@ -64,7 +62,7 @@ const Navbar = () => {
         <nav className="container mx-auto flex items-center justify-between flex-wrap">
           <div className=" flex justify-between items-center flex-shrink-0">
             <a href="/" className="flex items-center">
-              <img src={nav.data.logo.url} className="rounded-full xs:w-8 xs:h-8  w-10 h-10 md:w-12 md:h-12 mr-3" alt="Joseph Masongsong - Vancouver, BC based web developer and consultant" />
+              <img src={nav.data.logo.url} className="rounded-full xs:w-8 xs:h-8  w-10 h-10 md:w-12 md:h-12 mr-3" alt={nav.data.logo.alt} />
               <span className="font-header text-xl md:text-2xl leading-none">{RichText.asText(nav.data.title)}</span>
             </a>
           </div>
@@ -82,13 +80,11 @@ const Navbar = () => {
           </div>
           <div className={`w-full md:flex md:items-center md:w-auto ${showHideClass}`} id="navlinks-container">
             <div className="mt-6 md:mt-0 md:flex-grow" id="navlinks">
-
-              <Link href="/" passHref>
+              <Link href="/">
                 <a className="mt-6 md:mt-0 btn-callout w-full block text-center text-base md:w-auto md:inline-block" >
                   Home
                 </a>
               </Link>
-
             </div>
           </div>
         </nav>

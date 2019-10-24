@@ -13,7 +13,7 @@
 }
 
 .topnav-fixed .btn-callout {
-  @apply font-header py-3 px-6 bg-blue-skies-500 text-white;
+  @apply font-header py-3 px-6 bg-blue-skies-600 text-white;
 }
 
 h1, h2, h3, h4, h5, h6 {

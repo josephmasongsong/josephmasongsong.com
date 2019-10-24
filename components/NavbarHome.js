@@ -85,7 +85,7 @@ const NavbarHome = () => {
         <nav className="container mx-auto flex items-center justify-between flex-wrap">
           <div className="flex justify-between items-center flex-shrink-0">
             <a href="/" className="flex items-center">
-              <img src={nav.data.logo.url} className="rounded-full xs:w-8 xs:h-8 w-10 h-10 md:w-12 md:h-12 mr-3" alt="Joseph Masongsong is a Vancouver, BC based web developer, UI designer, and consultant." />
+              <img src={nav.data.logo.url} className="rounded-full xs:w-8 xs:h-8 w-10 h-10 md:w-12 md:h-12 mr-3"  alt={nav.data.logo.alt} />
               <span className="font-header text-xl md:text-2xl leading-none">{RichText.asText(nav.data.title)}</span>
             </a>
           </div>
@@ -103,7 +103,7 @@ const NavbarHome = () => {
           <div className={`w-full lg:flex lg:items-center lg:w-auto ${showHideClass}`} id="navlinks-container">
             <div className="mt-6 lg:mt-0 lg:flex-grow" id="navlinks">
               <NavLinks slices={nav.data.nav} />
-              <Link href="/contact" passHref>
+              <Link href="/contact">
                 <a className="mt-6 lg:mt-0 btn-callout w-full block text-center text-base lg:w-auto lg:inline-block" >
                   Contact
                 </a>

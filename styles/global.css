@@ -89,3 +89,18 @@ button[class^="burger_hamburger__"] {
 .grow:hover {
   transform: scale(1.05);
 }
+
+.project-description ul {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  margin-top: 1.25rem;
+}
+
+.project-description ul li:before {
+  content: '\e080';
+  font-family: 'simple-line-icons';
+  font-size: 1.25rem;
+  margin-right: 5px;
+  vertical-align: sub;
+}
