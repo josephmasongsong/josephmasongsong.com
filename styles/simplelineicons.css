@@ -97,8 +97,10 @@
 .icon-drawer,
 .icon-docs,
 .icon-doc,
+/* purgecss start ignore */
 .icon-diamond,
 .icon-cup,
+/* purgecss end ignore */
 .icon-calculator,
 .icon-bubbles,
 .icon-briefcase,
@@ -118,7 +120,9 @@
 .icon-size-actual,
 .icon-shuffle,
 .icon-share-alt,
+/* purgecss start ignore */
 .icon-share,
+/* purgecss end ignore */
 .icon-rocket,
 .icon-question,
 .icon-pie-chart,
@@ -143,7 +147,9 @@
 .icon-control-forward,
 .icon-control-end,
 .icon-volume-1,
+/* purgecss start ignore */
 .icon-volume-2,
+/* purgecss end ignore */
 .icon-volume-off,
 .icon-calendar,
 .icon-bulb,
@@ -163,7 +169,9 @@
 .icon-link,
 .icon-lock,
 .icon-lock-open,
+/* purgecss start ignore */
 .icon-magnifier,
+/* purgecss end ignore */
 .icon-magnifier-add,
 .icon-magnifier-remove,
 .icon-paper-clip,
@@ -195,7 +203,9 @@
 .icon-social-spotify,
 .icon-social-stumbleupon,
 .icon-social-youtube,
+/* purgecss start ignore */
 .icon-social-dropbox,
+/* purgecss end ignore */
 .icon-social-vkontakte,
 .icon-social-steam {
   font-family: 'simple-line-icons';
@@ -473,12 +483,14 @@
 .icon-doc:before {
   content: "\e085";
 }
+/* purgecss start ignore */
 .icon-diamond:before {
   content: "\e043";
 }
 .icon-cup:before {
   content: "\e044";
 }
+/* purgecss end ignore */
 .icon-calculator:before {
   content: "\e049";
 }
@@ -536,9 +548,11 @@
 .icon-share-alt:before {
   content: "\e05a";
 }
+/* purgecss start ignore */
 .icon-share:before {
   content: "\e05b";
 }
+/* purgecss end ignore */
 .icon-rocket:before {
   content: "\e05c";
 }
@@ -611,9 +625,11 @@
 .icon-volume-1:before {
   content: "\e09f";
 }
+/* purgecss start ignore */
 .icon-volume-2:before {
   content: "\e0a0";
 }
+/* purgecss end ignore */
 .icon-volume-off:before {
   content: "\e0a1";
 }
@@ -671,9 +687,11 @@
 .icon-lock-open:before {
   content: "\e08f";
 }
+/* purgecss start ignore */
 .icon-magnifier:before {
   content: "\e090";
 }
+/* purgecss end ignore */
 .icon-magnifier-add:before {
   content: "\e091";
 }
@@ -767,9 +785,11 @@
 .icon-social-youtube:before {
   content: "\e008";
 }
+/* purgecss start ignore */
 .icon-social-dropbox:before {
   content: "\e00c";
 }
+/* purgecss end ignore */
 .icon-social-vkontakte:before {
   content: "\e618";
 }
