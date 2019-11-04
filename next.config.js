@@ -9,4 +9,8 @@ module.exports = withCSS({
 
     return config
   },
+  env: {
+    STATICKIT: process.env.STATICKIT,
+    PRISMIC: process.env.PRISMIC
+  }
 })

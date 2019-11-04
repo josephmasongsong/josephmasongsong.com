@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getNavbarAPI } from '../api'
 import { linkResolver, hrefResolver } from '../helpers'
+import { endPoint } from '../api'
 import { RichText } from 'prismic-reactjs'
 import { Link as ScrollLink, animateScroll } from 'react-scroll'
 import Link from 'next/link'
@@ -14,7 +14,7 @@ const NavbarHome = () => {
   const [ isOpen, setIsOpen ] = useState(false)
 
   const endPoint = process.env.PRISMIC
-  const Client = Prismic.client(`https://josephmasongsong.cdn.prismic.io/api/v2`)
+  const Client = Prismic.client(endPoint)
 
   useEffect(
     () => {
