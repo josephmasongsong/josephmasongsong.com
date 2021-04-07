@@ -22,7 +22,6 @@ i[class*="icon-"] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/* purgecss end ignore */
 
 .icon-user,
 .icon-people,
@@ -63,7 +62,9 @@ i[class*="icon-"] {
 .icon-event,
 .icon-exclamation,
 .icon-organization,
+/* purgecss start ignore */
 .icon-trophy,
+/* purgecss end ignore */
 .icon-screen-smartphone,
 .icon-screen-desktop,
 .icon-plane,
@@ -171,7 +172,9 @@ i[class*="icon-"] {
 .icon-camera,
 .icon-cloud-download,
 .icon-cloud-upload,
+/* purgecss start ignore */
 .icon-envelope,
+/* purgecss end ignore */
 .icon-eye,
 .icon-flag,
 .icon-heart,
@@ -344,9 +347,12 @@ i[class*="icon-"] {
 .icon-organization:before {
   content: "\e616";
 }
+/* purgecss start ignore */
 .icon-trophy:before {
   content: "\e006";
 }
+/* purgecss end ignore */
+
 .icon-screen-smartphone:before {
   content: "\e010";
 }
@@ -668,9 +674,11 @@ i[class*="icon-"] {
 .icon-cloud-upload:before {
   content: "\e084";
 }
+/* purgecss start ignore */
 .icon-envelope:before {
   content: "\e086";
 }
+/* purgecss end ignore */
 .icon-eye:before {
   content: "\e087";
 }
