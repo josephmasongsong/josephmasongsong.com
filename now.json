@@ -10,12 +10,14 @@
     { "src": "/(?<uid>[^/]+)$", "dest": "/page?uid=$uid" }
   ],
   "env": {
-    "STATICKIT": "@statickit",
+    "FORMSPREE_PROJECT_ID": "@formspree_project_id",
+    "FORMSPREE_DEPLOY_KEY": "@formspree_deploy_key",
     "PRISMIC": "@prismic"
   },
   "build": {
     "env": {
-      "STATICKIT": "@statickit",
+      "FORMSPREE_PROJECT_ID": "@formspree_project_id",
+      "FORMSPREE_DEPLOY_KEY": "@formspree_deploy_key",
       "PRISMIC": "@prismic"
     }
   }

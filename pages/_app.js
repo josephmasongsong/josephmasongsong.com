@@ -2,6 +2,7 @@ import React from 'react'
 import App from 'next/app'
 import Router from "next/router";
 import withGA from "next-ga";
+import { FormspreeProvider } from '@formspree/react';
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -18,7 +19,7 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
+    return <FormspreeProvider project={process.env.FORMSPREE_PROJECT_ID}><Component {...pageProps} /></FormspreeProvider>
   }
 }
 

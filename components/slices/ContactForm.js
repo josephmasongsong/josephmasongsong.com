@@ -1,10 +1,8 @@
-import { ValidationError, useForm } from '@statickit/react';
+import { ValidationError, useForm } from '@formspree/react';
 import Link from 'next/link'
 
 const ContactForm = () => {
-  const [state, submit] = useForm({
-    id: process.env.STATICKIT
-  });
+  const [state, submit] = useForm('contactForm');
 
   if (state.succeeded) {
     return (

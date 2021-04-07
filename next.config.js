@@ -10,7 +10,8 @@ module.exports = withCSS({
     return config
   },
   env: {
-    STATICKIT: process.env.STATICKIT,
+    FORMSPREE_PROJECT_ID: process.env.FORMSPREE_PROJECT_ID,
+    FORMSPREE_DEPLOY_KEY: process.env.FORMSPREE_DEPLOY_KEY,
     PRISMIC: process.env.PRISMIC
   }
 })
