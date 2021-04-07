@@ -17,7 +17,7 @@
     "@zeit/next-css": "^1.0.1",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
-    "fastify": "^2.9.0",
+    "fastify": "^2.15.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.1.1",
     "next-ga": "^2.3.4",
